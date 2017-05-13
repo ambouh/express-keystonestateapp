@@ -5,8 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Keystone State Basketball Camps</title>
+
+  <!--styles-->
   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!--scripts-->
   <script src="/javascripts/jquery.min.js"></script>
   <script src="/javascripts/bootstrap.min.js"></script>
   <script>
@@ -14,11 +19,15 @@
     document.createElement( "picture" );
   </script>
   <script src="/javascripts/picturefill.min.js" async></script>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-</head>
-<body>
 
-<main id="page-content">
+  <!--angular scripts-->
+  <script src="/javascripts/angular.js"></script>
+  <script src="/javascripts/angular-mock.js"></script>
+  <script src="/javascripts/angular-resource.js"></script>
+  <script src="/javascripts/angular-ui-router.js"></script>
+</head>
+<body ng-app="KeystoneState">
+  <main id="page-content">
   <div class="container" id="wrapper">
     <!--header-->
     <header id="nav" class="row">
@@ -69,89 +78,13 @@
         <div id="welcome-bg"></div>
       </div>
     </section>
-    <section id="camps">
-      <h2>CAMPS</h2>
-      <div id="camps-content">
-        <div>
-          <div class="camps-block">
-            <h1>All Camps</h1>
-            <p>skills camps, talent camps, and team camps</p>
-          </div>
-          <div class="camps-link">view</div>
-        </div>
-        <div>
-          <div class="camps-block">
-            <h1>All Camps</h1>
-            <p>skills camps, talent camps, and team camps</p>
-          </div>
-          <div class="camps-link">view</div>
-        </div>
-        <div>
-          <div class="camps-block">
-            <h1>All Camps</h1>
-            <p>skills camps, talent camps, and team camps</p>
-          </div>
-          <div class="camps-link">view</div>
-        </div>
-      </div>
-    </section>
-    <section id="display">
-      <div id=""></div>
-    </section>
-    <section id="notable-alumni">
-      <h1>Notable Alumni</h1>
-      <div></div>
-    </section>
   </div>
 </main>
-<footer>
+  <footer>
   <div class="container">
     <section class="row" id="footer-section">
-      <div class="col-xs-12">
-        <section id="blog">
-          <h3>blog</h3>
-          <div>
-            <div class="blog-content">
-              <h2>GAME 4 LANDS GOLDEN STATE WARRIORS BACK IN PLAY</h2>
-              <p>Golden State Warrior scored 97-67 on...</p>
-            </div>
-          </div>
-          <div>
-            <div class="blog-content">
-              <h2>GAME 4 LANDS GOLDEN STATE WARRIORS BACK IN PLAY</h2>
-              <p>Golden State Warrior scored 97-67 on...</p>
-            </div>
-          </div>
-        </section>
-        <section>
-          <a href="#">view more</a>
-          <span class="horizontal-line"></span>
-          <div class="printable-application">printable applications</div>
-        </section>
-      </div>
       <!--footer-sub-->
-      <div id="footer-sub" class="col-xs-12 text-center visible-xs visible-sm">
-        <p id="phone" class="col-xs-12"><span class="fa fa-phone fa-lg footer-contact"></span> +1 731 555 5555</p>
-        <a id="email" class="col-xs-12" href="mailto:keystonestatecamps@hotmail.com"><span class="fa fa-envelope fa-lg footer-contact"></span> keystonestatecamps@hotmail.com</a>
-        <div class="col-xs-12 col-sm-offset-3">
-          <ul class="nav navbar-nav ">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SITEMAP</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">PRIVACY POLICY</a></li>
-          </ul>
-        </div>
-        <p class="col-xs-12 col-sm-12 col-lg-12">© 2015 Keystone State Basketball Camp ALL RIGHTS RESERVED</p>
-        <section class="col-xs-12" id="fb-yt">
-          <a href="#" class=""><span class="social-sprite" id="facebook">&nbsp;</span></a>
-          <a href="#" class=""><span class="social-sprite" id="youtube">&nbsp;</span></a>
-        </section>
-        <div class="col-xs-12">
-          <p style="display: inline-block;">Developed by</p>
-          <div style="width: 125px; height: 20px; background-color: #888; display: inline-block;"></div>
-        </div>
-      </div>
-      <div id="footer-sub" class="col-md-12 hidden-xs hidden-sm">
+      <div id="footer-sub" class="col-md-12">
         <section class="col-md-12" id="sub-1">
           <section id="footer-links" class="col-sm-12 col-md-6">
             <ul class="nav navbar-nav pull-left">
@@ -177,7 +110,7 @@
 
           <div id="development" class="col-md-5 text-center">
             <p style="display: inline-block;">Developed by</p>
-            <div style="width: 125px; height: 20px; background-color: #888; display: inline-block;"></div>
+            <div></div>
           </div>
         </section>
 
@@ -187,8 +120,6 @@
     </section>
   </div>
 </footer>
-
-
 </body>
 </html>
 

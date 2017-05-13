@@ -340,8 +340,23 @@ section#sub-2 {
 }
 
 #development {
-
   padding-left: 10%;
+  position: relative;
+  top: -6px;
+}
+
+#development p {
+  color: #fff;
+}
+
+#development div {
+  background: url(../images/a-development-by-andres.png) no-repeat;
+  display: inline-block;
+  height: 23px;
+  width: 152px;
+  position: relative;
+  top: 4px;
+  left: 2px;
 }
 
 a#email:hover {

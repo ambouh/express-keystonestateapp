@@ -1,8 +1,364 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* CSS Document */
+@font-face {
+  font-family: calibri;
+  src: url(../fonts/calibri.ttf);
+}
+@font-face {
+  font-family: calibri;
+  src: url(../fonts/calibrib.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: kalinga;
+  src: url(../fonts/kalinga.ttf);
+}
+@font-face {
+  font-family: kalingab;
+  src: url(../fonts/kalingab.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Kalingab;
+  src: url(../fonts/kalingab.ttf);
+  font-weight: bold;
 }
 
-a {
-  color: #00B7FF;
+@font-face {
+  font-family: "Lobster Two";
+  src: url(../fonts/LobsterTwo-BoldItalic.ttf);
 }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+body {
+  font-size: 18px;
+  background: url(../images/texture_grain_200x200_v2.png) repeat top left;
+  font-family: calibri, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #999;
+}
+
+div#wrapper {
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.35);
+}
+
+/*HEADER*/
+
+.navbar-default {
+  background-color: #c34042;
+  border-color: #a94442;
+  font-family: kalinga, sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 0 1.389em;
+}
+
+/*HEADER - BRAND*/
+.navbar-brand {
+  padding: 0;
+  position:absolute;
+}
+
+ul.nav.navbar-nav.navbar-right {
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  margin-top: 65px;
+  margin-bottom: 35px;
+}
+
+/*HEADER - NAV FROM 771PX AND UP*/
+.navbar-default .navbar-nav>li>a {
+  color: #FFF;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  padding-right: 10px;
+  border-bottom: 3px solid transparent;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FFF;
+  border-bottom: 3px solid #FFF;
+}
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #FFF;
+  background-color: transparent;
+}
+
+/*JUMBOTRON SECTION*/
+
+section#jumbotron-section {
+  background: url(../images/bg-jumbotron.png) no-repeat top center;
+  background-size: cover;
+}
+
+section#jumbotron-section.row {
+  padding-top: 5.625em;
+  padding-bottom: 5.625em;
+}
+
+h3#subtitle {
+  color: #ccc;
+  text-shadow: .5px .866px 1px rgba(0,0,0,0.208);
+  font-size: 36px;
+  font-family: "Lobster Two";
+  font-style: italic;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+
+/*JUMBOTRON - Sign up and Cancel Button*/
+#jumbotron-btn-group a.btn.btn-default {
+  background-color: #C34042;
+  border-radius: 0;
+  font: 0.813em kalinga;
+  color: #FFF;
+  border-left: none;
+  border-right: none;
+  padding: 0.938em 0.938em 0.8em 0.938em;
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+#jumbotron-btn-group {
+  margin: 1.5em 0 0 0;
+  border-bottom: 1px solid #FFF;
+  background-color: #C34042;
+  border-top: 1px solid #FFF;
+}
+
+#jumbotron-btn-group a.btn.btn-default:hover {
+  border-bottom: 3px solid #FFF;
+}
+
+/*MISSION STATEMENT*/
+
+/*Small devices (tablets, 770px and up)*/
+@media (min-width: 770px) and (max-width: 991px) {
+  .navbar-default {
+    font-size: 0.85em;
+  }
+  .navbar-default .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  ul.nav.navbar-nav.navbar-right {
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+
+  .navbar-brand {
+    padding: 0;
+    position: absolute;
+    margin-left: -6px;
+  }
+}
+@media (min-width: 320px) and (max-width: 769px) {
+
+  ul.nav.navbar-nav.navbar-right {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    text-align: center;
+  }
+
+  .navbar-form {
+    border-color: #A02121;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #FDD3BE;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #FDD3BE;
+  }
+
+  .navbar-header {
+    padding-bottom: 0;
+  }
+
+  .navbar-default {
+    padding: 0;
+  }
+
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #9E3B3C;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    color: #D05052;
+    background: #9E3B3C;
+
+  }
+
+  .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover  {
+    border-bottom: none;
+  }
+
+  .navbar-collapse {
+    padding-left: 0 ;
+    padding-right: 0;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #943738;
+  }
+  .navbar-brand {
+    z-index: 20;
+    position: absolute;
+    padding: 0 0 0 5px;
+  }
+
+  .navbar-toggle {
+    margin: 20px 0;
+    margin-right: 15px;
+  }
+}
+
+/*MISSION STATEMENT SECTION */
+
+#welcome {
+  background-color: #fff;
+}
+.flex-container {
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-container>div {
+  padding: 10px;
+  background: #fff;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flex-container #welcome-bg {
+  background: #f2dede;
+}
+
+/*CAMPS SECTION*/
+section#camps-section {
+  border-top: 10px solid #a5a5a5;
+  background-color: #e7e7e7;
+  padding-bottom: 1.875em;
+}
+
+div#camps-pic-link {
+  height: auto;
+  background: transparent;
+  margin-bottom: 20px;
+}
+/*NOTABLE ALUMNI SECTION*/
+section#alumni-section {
+  border-top: 10px solid #3b8faf;
+  background-color: #a3cad8;
+  padding-bottom: 1.875em;
+}
+
+#alumni-section div>p {
+  color: #245b70;
+}
+
+div#alumni-carousel {
+  height: 150px;
+  background: #888;
+}
+
+/*BLOGS SECTION*/
+section#blog-section {
+  border-top: 10px solid #a5a5a5;
+  background-color: #e7e7e7;
+  padding-bottom: 1.875em;
+}
+section#blog-pic-link {
+  background: #888;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+/*FOOTER SECTION*/
+section#footer-section {
+  border-top: 10px solid #245b70;
+  background-color: #2880a1;
+}
+
+#footer-section>div>p.h2 {
+  color: #245b70;
+}
+
+div#footer-sub {
+  background: #1f617a;
+  color: #1a4250;
+  font-size: 0.850em;
+}
+
+.social-sprite {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url(../images/social-sprite.png) no-repeat;
+  background-position: left top;
+}
+
+span#youtube {
+  background-position: -30px top;
+}
+
+section#email-phone {
+  padding-top: 1em;
+}
+span.footer-contact {
+  color: #ba4547;
+}
+
+section#sub-2 {
+  border-top: 1px solid #2b87aa;
+  padding-top: 15px;
+}
+
+section#email-phone {
+  padding-top: 1em;
+}
+
+section#sub-2 {
+  border-top: 1px solid #2b87aa;
+  padding-top: 1em;
+}
+
+#development {
+
+  padding-left: 10%;
+}
+
+a#email:hover {
+  color: #2b84a7;
+}
+a#email {
+  color: #1B4454;
+  text-decoration: none;
+}
+
+p#phone {
+  padding-top: 15px;
+}
+
+
+/*Medium devices (desktops, 992px and up)*/
+/*@media (min-width: @screen-md-min) {  }*/
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: @screen-lg-min) {}*/

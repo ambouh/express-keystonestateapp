@@ -25,12 +25,16 @@
   <script src="/javascripts/angular-mock.js"></script>
   <script src="/javascripts/angular-resource.js"></script>
   <script src="/javascripts/angular-ui-router.js"></script>
+
+  <!--angular app -->
+  <script src="/javascripts/app/angularApp.js"></script>
+  <script src="/javascripts/common/navController.js"></script>
 </head>
 <body ng-app="KeystoneState">
   <main id="page-content">
   <div class="container" id="wrapper">
     <!--header-->
-    <header id="nav" class="row">
+    <header id="nav" class="row" ng-controller="NavController">
       <nav class="navbar navbar-default navbar-static-top" id="top-navbar">
         <div class="navbar-header"> <a class="navbar-brand" href="#">
             <img class="hidden-xs hidden-sm visible-md visible-lg" alt="Brand" src="images/logo.png">

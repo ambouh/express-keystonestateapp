@@ -22,7 +22,7 @@
 
   <!--angular scripts-->
   <script src="/javascripts/angular.js"></script>
-  <script src="/javascripts/angular-mock.js"></script>
+  <script src="/javascripts/angular-mocks.js"></script>
   <script src="/javascripts/angular-resource.js"></script>
   <script src="/javascripts/angular-ui-router.js"></script>
 
@@ -30,13 +30,14 @@
   <script src="/javascripts/app/angularApp.js"></script>
   <script src="/javascripts/common/navController.js"></script>
 </head>
-<body ng-app="KeystoneState">
+<body ng-app="KeystoneStateApp">
   <main id="page-content">
   <div class="container" id="wrapper">
     <!--header-->
-    <header id="nav" class="row" ng-controller="NavController">
+    <header id="nav" class="row"  ng-controller="NavController as vm">
       <nav class="navbar navbar-default navbar-static-top" id="top-navbar">
-        <div class="navbar-header"> <a class="navbar-brand" href="#">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
             <img class="hidden-xs hidden-sm visible-md visible-lg" alt="Brand" src="images/logo.png">
             <img class="hidden-lg hidden-xs hidden-md visible-sm " alt="Brand" src="images/logo-md.png">
             <img class="hidden-lg hidden-md visible-xs" alt="Brand" src="images/logo-sm.png">
@@ -48,12 +49,9 @@
         <div class="collapse navbar-collapse" id="menu">
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Camps</a></li>
-            <li><a href="#">Shootouts</a></li>
-            <li><a href="#">Notable Alumni</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li ng-repeat="a in vm.header">
+              <a href="{{a.href}}">{{a.link}}</a>
+            </li>
           </ul>
         </div>
       </nav>

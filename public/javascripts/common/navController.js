@@ -3,10 +3,11 @@
  */
 (function () {
     "use strict";
-    angular.module('KeystoneApp')
+    angular
+        .module('KeystoneStateApp')
         .controller('NavController',
             [
-                ProductListCrtl
+                NavController
             ]
         );
 

@@ -3,7 +3,7 @@
  */
 (function () {
     "use strict";
-    var app = angular.module('KeystoneState', []);
+    var app = angular.module('KeystoneStateApp', []);
         app.run(allScripts);
 
     //functions

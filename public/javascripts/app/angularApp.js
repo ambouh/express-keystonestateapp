@@ -3,11 +3,15 @@
  */
 (function () {
     "use strict";
-    var app = angular.module('KeystoneStateApp', []);
-        app.run(allScripts);
+    var app = angular.module('KeystoneStateApp',
+        [
+            "common.services",
+            "ui.router"
+        ]);
+        app.run(allOtherScripts);
 
     //functions
-    function allScripts() {
+    function allOtherScripts() {
         dropdownFadeInOut();
     }
     function dropdownFadeInOut() {

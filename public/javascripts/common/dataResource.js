@@ -9,14 +9,14 @@
 
     function dataResource($http) {
         var o = {
-            dataContent: []
+            dataContent: null
         };
 
         o.getAll = function () {
-            /*            return $http.get('/javascripts/common/data.json').success(function (data) {
-                angular.copy(data, o.dataContent);
-            })*/
-            o.dataContent = {
+            return $http.get('/javascripts/common/data.json').success(function (response) {
+                o.dataContent = response;
+            })
+            /*o.dataContent = {
                            logo:[
                                {
                                    classNames: "hidden-xs hidden-sm visible-md visible-lg",
@@ -47,7 +47,7 @@
                                }
                            ]
                        };
-           return o.dataContent;
+           /*return o.dataContent;*/
         }
 
         return o;

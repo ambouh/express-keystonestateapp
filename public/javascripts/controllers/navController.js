@@ -48,6 +48,6 @@
          };*/
 
        vm.header = dataResource.getAll();
-        console.log(vm.header);
+        console.log(vm.header.toString());
     }
 }());

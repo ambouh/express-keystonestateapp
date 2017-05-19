@@ -1,7 +1,6 @@
-{
-  "header" :{
-    "logo":
-    [
+[{
+  "header":{
+    "logo":[
       {
         "classNames": "hidden-xs hidden-sm visible-md visible-lg",
         "pictureUrl": "images/logo.png"
@@ -16,8 +15,7 @@
       }
     ],
 
-    "links":
-    [
+    "links":[
       {
         "href": "#",
         "link": "Home"
@@ -31,6 +29,5 @@
         "link": "Camps"
       }
     ]
-  },
-  "footer": "hanky-panky"
-}
+  }
+}]

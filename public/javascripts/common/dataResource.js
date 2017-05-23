@@ -5,16 +5,30 @@
     "use strict";
     angular
         .module("common.services")
-        .factory("dataResource", [ "$http", dataResource]);
+        .factory("dataResource", [ "$http"]);
 
     function dataResource($http) {
         var o = {
-            dataContent: null
+            dataContent: []
         };
 
         o.getAll = function () {
-            return $http.get('/javascripts/common/data.json').success(function (response) {
-                o.dataContent = response;
+            $http.get('/javascripts/common/data.json').success(function (response) {
+                o.dataContent = {
+                    logo:[
+                        {
+                            classNames: "hidden-xs hidden-sm visible-md visible-lg",
+                            pictureUrl: "images/logo.png",
+                        },
+                        {
+                            classNames: "hidden-lg hidden-xs hidden-md visible-sm",
+                            pictureUrl: "images/logo-md.png",
+                        },
+                        {
+                            classNames: "hidden-lg hidden-md visible-xs",
+                            pictureUrl: "images/logo-sm.png",
+                        },
+                    ]}
             })
             /*o.dataContent = {
                            logo:[

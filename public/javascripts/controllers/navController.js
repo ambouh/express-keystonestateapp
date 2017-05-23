@@ -5,14 +5,33 @@
     "use strict";
     angular
         .module('KeystoneStateApp')
-        .controller('NavController',
-            [
-                "dataResource",
-                NavController
-            ]
-        );
+        .config([
+            "$stateProvider",
+            "$urlRouterProvider",
+            function ($stateProvider, $urlRouterProvider) {
+                $urlRouterProvider.otherwise("/");
 
-    function NavController(dataResource) {
+                $stateProvider
+                    .state('home',{
+                        url: '/',
+                        templateUrl: '/views/home.html',
+                        controller: 'NavController',
+                        resolve:{
+                            mainInfo: ['mainInfo', function(mainInfo){
+                                return mainInfo.getAll();
+                            }]
+                        }
+                    })
+            }
+        ])
+        .factory('mainInfo', ["$http", mainInfo]).controller('NavController',
+        [
+            "mainInfo",
+            NavController
+        ]
+    )
+
+    function NavController(mainInfo) {
         var vm = this;
 
        /* vm.header = {
@@ -47,7 +66,22 @@
          ]
          };*/
 
-       vm.header = dataResource.getAll();
-        console.log(vm.header.toString());
+       vm.header = mainInfo.dataContent;
+
+        console.log(vm.header);
+    }
+
+    function mainInfo($http) {
+        var o = {
+            dataContent: []
+        }
+
+        o.getAll = function () {
+            return $http.get('/javascripts/common/data.json').success(function(data){
+                angular.copy(data, o.dataContent);
+            });
+        }
+
+        return o;
     }
 }());

@@ -1,33 +1,71 @@
 {
-  "header":{
-    "logo":[
-      {
-        "classNames": "hidden-xs hidden-sm visible-md visible-lg",
-        "pictureUrl": "images/logo.png"
-      },
-      {
-        "classNames": "hidden-lg hidden-xs hidden-md visible-sm",
-        "pictureUrl": "images/logo-md.png"
-      },
-      {
-        "classNames": "hidden-lg hidden-md visible-xs",
-        "pictureUrl": "images/logo-sm.png"
-      }
-    ],
+  "template":{
+    "header":{
+      "logo":{
+        "picture": [
+          {
+          "classNames": "hidden-xs hidden-sm visible-md visible-lg",
+          "pictureUrl": "images/logo.png"
+          },
+          {
+            "classNames": "hidden-lg hidden-xs hidden-md visible-sm",
+            "pictureUrl": "images/logo-md.png"
+          },
+          {
+            "classNames": "hidden-lg hidden-md visible-xs",
+            "pictureUrl": "images/logo-sm.png"
+          }
+        ],
+        "link": "#"
+        },
+      "links":[
+        {
+          "href": "#",
+          "link": "Home"
+        },
+        {
+          "href": "#",
+          "link": "About"
+        },
+        {
+          "href": "#",
+          "link": "Camps"
+        }
+      ]
+    },
+    "footer":{
+      "footerLinks":[
+        {
+          "page": "home",
+          "url": "#"
+        },
+        {
+          "page": "sitemap",
+          "url": "#"
+        },
+        {
+          "page": "faq",
+          "url": "#"
+        },
+        {
+          "page": "privacy policy",
+          "url": "#"
+        }
+      ],
+      "footerContact":[
+        {
+          "icon": "fa fa-phone fa-lg",
+          "text": "+1(731)555.5555"
+        },
+        {
+          "icon": "fa fa-envelope fa-lg",
+          "text": "keystonestatecamps@hotmail.com"
+        }
+      ]
+    }
+  },
+  "home":{
 
-    "links":[
-      {
-        "href": "#",
-        "link": "Home"
-      },
-      {
-        "href": "#",
-        "link": "About"
-      },
-      {
-        "href": "#",
-        "link": "Camps"
-      }
-    ]
   }
+
 }

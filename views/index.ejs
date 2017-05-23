@@ -29,7 +29,7 @@
   <!--angular app -->
   <script src="/javascripts/app/angularApp.js"></script>
   <script src="/javascripts/common/common.services.js"></script>
-  <script src="/javascripts/common/dataResource.js"></script>
+  <script src="/javascripts/common/mainInfo.js"></script>
   <script src="/javascripts/controllers/navController.js"></script>
 
 </head>
@@ -40,8 +40,8 @@
     <header id="nav" class="row"  ng-controller="NavController as vm">
       <nav class="navbar navbar-default navbar-static-top" id="top-navbar">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img ng-repeat="logo in vm.header.logo" class="{{logo.classNames}}" alt="Brand" ng-src="{{logo.pictureUrl}}"/>
+          <a class="navbar-brand" ui-sref="{{vm.header.logo.link}}">
+            <img ng-repeat="logo in vm.header.logo.picture" class="{{logo.classNames}}" alt="Brand" ng-src="{{logo.pictureUrl}}"/>
           </a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="menu">
             <span class="sr-only">Toggle navigation</span>

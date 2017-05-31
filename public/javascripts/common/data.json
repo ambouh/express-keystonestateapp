@@ -54,18 +54,52 @@
       ],
       "footerContact":[
         {
-          "icon": "fa fa-phone fa-lg",
+          "url": "#",
+          "className": "fa fa-phone fa-lg footer-contact",
           "text": "+1(731)555.5555"
         },
-        {
-          "icon": "fa fa-envelope fa-lg",
+        { "url":"mailto:keystonestatecamps@hotmail.com",
+          "className": "fa fa-envelope fa-lg footer-contact",
           "text": "keystonestatecamps@hotmail.com"
         }
-      ]
+      ],
+      "copyrightText": "© 2015 Keystone State Basketball Camp ALL RIGHTS RESERVED",
+      "socialMedia":[
+        {
+          "url": "#",
+          "id": "facebook",
+          "className": "social-sprite"
+        },
+        {
+          "url": "#",
+          "id": "youtube",
+          "className": "social-sprite"
+        }
+      ],
+      "devTag": {
+        "id":"development",
+        "content": "Developed by",
+        "signature": [
+          "idtosignature",
+          "am"
+        ]
+      }
     }
   },
   "home":{
-
+    "jumbotron":{},
+    "welcome":{
+      "url" : "images/welcome-bg.jpg",
+      "content" :
+      [
+        "welcome",
+        "to keystone state basketball camps",
+        "is et consectetur enim tincidunt. Etiam maximus condimentum egestas. Nullam posuere faucibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam posuere faucibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Etiam maximus condimentum egestas. Nullam posuere faucibus sag"
+      ]
+    },
+    "camps":{},
+    "display":{},
+    "alumni": {},
+    "blog": {}
   }
-
 }

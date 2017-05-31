@@ -1,0 +1,41 @@
+
+/*CAMPS SECTION*/
+section#camps-section {
+    border-top: 10px solid #a5a5a5;
+    background-color: #e7e7e7;
+    padding-bottom: 1.875em;
+}
+
+div#camps-pic-link {
+    height: auto;
+    background: transparent;
+    margin-bottom: 20px;
+}
+/*NOTABLE ALUMNI SECTION*/
+section#alumni-section {
+    border-top: 10px solid #3b8faf;
+    background-color: #a3cad8;
+    padding-bottom: 1.875em;
+}
+
+#alumni-section div>p {
+    color: #245b70;
+}
+
+div#alumni-carousel {
+    height: 150px;
+    background: #888;
+}
+
+/*BLOGS SECTION*/
+section#blog-section {
+    border-top: 10px solid #a5a5a5;
+    background-color: #e7e7e7;
+    padding-bottom: 1.875em;
+}
+section#blog-pic-link {
+    background: #888;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}

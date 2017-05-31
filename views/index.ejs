@@ -9,6 +9,7 @@
   <!--styles-->
   <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/_css/home.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!--scripts-->
@@ -30,14 +31,17 @@
   <script src="/javascripts/app/angularApp.js"></script>
   <script src="/javascripts/common/common.services.js"></script>
   <script src="/javascripts/common/mainInfo.js"></script>
-  <script src="/javascripts/controllers/navController.js"></script>
+
+  <!--controllers-->
+  <script src="/javascripts/controllers/templateController.js"></script>
+  <script src="/javascripts/controllers/homeController.js"></script>
 
 </head>
 <body ng-app="KeystoneStateApp">
   <main id="page-content">
   <div class="container" id="wrapper">
     <!--header-->
-    <header id="nav" class="row"  ng-controller="NavController as vm">
+    <header id="nav" class="row"  ng-controller="TemplateController as vm">
       <nav class="navbar navbar-default navbar-static-top" id="top-navbar">
         <div class="navbar-header">
           <a class="navbar-brand" ui-sref="{{vm.header.logo.link}}">
@@ -65,41 +69,42 @@
     <ui-view></ui-view>
   </div>
 </main>
-  <footer>
+  <footer ng-controller="TemplateController as vm">
   <div class="container">
     <section class="row" id="footer-section">
       <!--footer-sub-->
       <div id="footer-sub" class="col-md-12">
         <section class="col-md-12" id="sub-1">
-          <section id="footer-links" class="col-sm-12 col-md-6">
-            <ul class="nav navbar-nav pull-left">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">SITEMAP</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">PRIVACY POLICY</a></li>
+          <section id="footer-links">
+            <ul class="nav navbar-nav">
+              <li ng-repeat="link in vm.footer.footerLinks">
+                <a ui-sref="{{link.url}}">{{link.page}}</a>
+              </li>
             </ul>
           </section>
-          <section id="email-phone" class="col-sm-12 col-md-6">
-            <ul class="list-inline pull-right" id="footer-contact-1">
-              <li><span class="fa fa-phone fa-lg footer-contact"></span> +1 731 555 5555</li>
-              <li><span class="fa fa-envelope fa-lg footer-contact"></span><a id="email" href="mailto:keystonestatecamps@hotmail.com"> keystonestatecamps@hotmail.com</a> </li>
+          <section id="email-phone" >
+            <ul id="footer-contact-1">
+              <li ng-repeat="item in vm.footer.footerContact">
+                <a href="{{item.url}}" class="email"><span class="{{item.className}}"></span>&nbsp;{{item.text}}</a>
+              </li>
             </ul>
           </section>
         </section>
-        <section class="col-md-12" id="sub-2">
-          <p class="col-md-5 pull-left"> © 2015 Keystone State Basketball Camp ALL RIGHTS RESERVED</p>
-          <section class="col-md-2" id="fb-yt">
-            <a href="#" class=""><span class="social-sprite" id="facebook">&nbsp;</span></a>
-            <a href="#" class=""><span class="social-sprite" id="youtube">&nbsp;</span></a>
+        <section id="sub-2">
+          <p>{{vm.footer.copyrightText}}</p>
+          <!---->
+          <section id="fb-yt">
+            <a ng-repeat="item in vm.footer.socialMedia" href="{{item.url}}">
+              <span class="{{item.className}}" id="{{item.id}}">&nbsp;</span>
+            </a>
           </section>
 
-          <div id="development" class="col-md-5 text-center">
-            <p style="display: inline-block;">Developed by</p>
-            <div></div>
+          <div id="{{vm.footer.devTag.id}}">
+            <p>{{vm.footer.devTag.content}}
+              <span id="{{vm.footer.devTag.signature[0]}}">{{vm.footer.devTag.signature[1]}}</span>
+            </p>
           </div>
         </section>
-
-
       </div>
       <!--end footer-sub-->
     </section>

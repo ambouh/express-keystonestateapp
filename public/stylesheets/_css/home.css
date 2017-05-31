@@ -1,0 +1,269 @@
+/*WELCOME SECTION */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+#welcome {
+    background-color: #fff;
+}
+.flex-container {
+    width: 100%;
+    min-height: 300px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-container>div {
+    padding: 70px 35px 30px;
+    background: #fff;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex-container #welcome-bg {
+    background: #f2dede;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 340px;
+}
+#welcome-content{
+    text-align: right;
+}
+
+#welcome-content h1 {
+    font-family: impact;
+    text-transform: capitalize;
+    text-shadow: 0.5px 0.866px 1px rgba(0,0,0,0.208);
+    color: #89c4db;
+    margin-bottom: 0;
+}
+#welcome-content h3 {
+    text-shadow: 0.5px 0.866px 1px rgba(0,0,0,0.208);
+    color: #0f83b0;
+    text-transform: capitalize;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+}
+/*CAMP SECTION*/
+section#camps {
+    background: #838484;
+    padding: 30px 35px 35px;
+    border-top: 10px solid #5f6161;
+}
+
+#camps .flex-container {
+    width: 100%;
+    min-height: 300px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#camps .flex-container>h1 {
+    margin: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dfdfdf;
+}
+
+ul.all-camps {
+    padding-left: 0;
+    list-style: none;
+    margin: 40px 30px;
+    display: flex;
+}
+
+li.camp-blurb {
+    background: url(/images/camp1.jpg) no-repeat;
+    background-color: transparent;
+    transition: background 500ms;
+    background-size: cover;
+    background-position: -48px;
+    margin: 0px 7px;
+}
+
+li.camp-blurb:hover {
+    background: url(/images/camp1.jpg) no-repeat;
+    transition: background 100ms;
+    background-color: transparent;
+    background-size: cover;
+    background-position: -406.67px;
+    }
+
+li.camp-blurb a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 500ms;
+}
+li.camp-blurb a:hover,
+li.camp-blurb a:focus {
+    color: rgba(66, 66, 66, 0.68);
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+li.camp-blurb div {
+    width: 220px;
+    margin: 0px 70px;
+    padding: 50px 0px 20px;
+}
+
+li.camp-blurb h1 {
+    font-family: 'agency FB', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    width: 25px;
+    line-height: 60px;
+}
+
+li.camp-blurb button {
+    width: 100%;
+    border: none;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 36px;
+    background: #6b6b6b;
+    font-weight: bold;
+}
+
+/*DISPLAY SECTION*/
+#display .flex-container {
+    background: #fff;
+    min-height: 0;
+}
+
+div.display-content {
+    height: 160px;
+    width: 900px;
+    padding: 0;
+    background: url(/images/teamwork-display.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 30px;
+}
+
+/*ALUMNI SECTION*/
+section#notable-alumni {
+    background: #a3cad8;
+    padding: 30px 35px 35px;
+    border-top: 10px solid #3b8faf;
+}
+
+#notable-alumni .flex-container {
+    width: 100%;
+    min-height: 300px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#notable-alumni .flex-container>h1 {
+    margin: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #245b70;
+}
+#notable-alumni .flex-container>div {
+    background: transparent;
+    padding: 30px 35px 30px;
+}
+
+#notable-alumni .carousel-control.left,
+#notable-alumni .carousel-control.right{
+    background-image: none ;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-control{
+    width: 0;
+}
+
+.carousel-control.right{
+    right: -30px;
+}
+
+.carousel-control.left{
+    left: -30px;
+}
+
+/*BLOG SECTION*/
+section#blog {
+    background: #2880a1;
+    padding: 30px 35px 35px;
+    border-top: 10px solid #245b70;
+}
+
+#blog .flex-container {
+    width: 100%;
+    min-height: 300px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blog .flex-container>h1 {
+    margin: 0;
+    font-size: 55px;
+    text-transform: lowercase;
+    font-weight: bold;
+    color: #245b70;
+}
+
+ul.all-blogs {
+    padding-left: 0;
+    list-style: none;
+    margin: 30px 0px;
+    display: flex;
+}
+
+li.blog-blurb {
+    background: #4096b7;
+    transition: background 100ms;
+    background-size: cover;
+    background-position: -48px;
+    margin: 0px;
+    margin-right: 30px;
+}
+
+li.blog-blurb:hover {
+    background: rgba(64, 150, 183, 0.36);
+    background-size: cover;
+    background-position: -48px;
+}
+
+li.blog-blurb a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 200ms, color 300ms;
+}
+li.blog-blurb a:hover,
+li.blog-blurb a:focus {
+    color: #23527c;
+    text-decoration: none;
+}
+
+li.blog-blurb div {
+    width: 410px;
+    margin: 0px 40px;
+    padding: 120px 0px 30px;
+}
+
+li.blog-blurb h1 {
+    font-family: 'impact', sans-serif;
+    font-size: 22px;
+    width: auto;
+    line-height: inherit;
+}
+
+h3.blog-subtitle {
+    padding: 0;
+    margin: 0;
+}

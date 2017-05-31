@@ -3,11 +3,27 @@
  */
 (function () {
     "use strict";
-    var app = angular.module('KeystoneStateApp',
+    var app = angular
+        .module('KeystoneStateApp',
         [
             "common.services",
             "ui.router"
+        ])
+        .config([
+            "$stateProvider",
+            "$urlRouterProvider",
+            function ($stateProvider, $urlRouterProvider) {
+                $urlRouterProvider.otherwise("/");
+
+                $stateProvider
+                    .state('home',{
+                        url: '/',
+                        templateUrl: '/views/home.html',
+                        controller: 'HomeController as vm'
+                    })
+            }
         ]);
+
         app.run(allOtherScripts);
 
     //functions

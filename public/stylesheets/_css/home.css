@@ -1,5 +1,18 @@
 /*WELCOME SECTION */
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500,600|Roboto:500,900');
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url(../../fonts/AGENCYR.TTF);
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url(../../fonts/AGENCYB.TTF);
+    font-weight: bold;
+}
+
 
 section#jumbotron-section.row {
     padding-top: 5.625em;
@@ -41,7 +54,7 @@ section#jumbotron-section.row {
 }
 
 #welcome-content h1 {
-    font-family: impact;
+    font-family: 'Oswald', sans-serif;
     text-transform: capitalize;
     text-shadow: 0.5px 0.866px 1px rgba(0,0,0,0.208);
     color: #89c4db;
@@ -122,7 +135,7 @@ li.camp-blurb div {
 }
 
 li.camp-blurb h1 {
-    font-family: 'agency FB', sans-serif;
+    font-family: 'Agency FB', sans-serif;
     font-size: 75px;
     font-weight: bold;
     width: 25px;
@@ -267,7 +280,7 @@ li.blog-blurb div {
 }
 
 li.blog-blurb h1 {
-    font-family: 'impact', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 22px;
     width: auto;
     line-height: inherit;

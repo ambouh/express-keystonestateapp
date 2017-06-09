@@ -105,6 +105,7 @@ section#jumbotron-section {
 
 #jumbotron-section.for-page {
   height: 45px;
+  background-position: top center;
 }
 
 h3#subtitle {
@@ -290,7 +291,10 @@ span#idtosignature::after{
 }
 /*Medium devices (desktops, 992px and up)*/
 @media (max-width: 991px) and (min-width: 0px){
-
+  section#jumbotron-section {
+    background-size: 1020px 524px;
+    background-position: top center;
+  }
   .col-md-12{
     padding: 0 10px;
   }

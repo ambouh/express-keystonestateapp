@@ -1,6 +1,16 @@
 /*WELCOME SECTION */
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
+section#jumbotron-section.row {
+    padding-top: 5.625em;
+    padding-bottom: 5.625em;
+}
+
+#play-keystone {
+    background: url("/images/play-keystone.png") no-repeat;
+    width: 630px;
+    height: 180px;
+}
 #welcome {
     background-color: #fff;
 }
@@ -266,4 +276,56 @@ li.blog-blurb h1 {
 h3.blog-subtitle {
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: 991px) and (min-width: 0px){
+
+}
+
+@media (max-width: 769px) and (min-width: 0px){
+    section#jumbotron-section.row {
+        padding-top: 4.625em;
+        padding-bottom: 4.625em;
+    }
+
+    #play-keystone {
+        background: url("/images/play-keystone-md.png") no-repeat;
+        width: 430px;
+        height: 125px;
+    }
+
+    h3#subtitle {
+        font-size: 28px;
+    }
+
+    .flex-container #welcome-bg {
+        display: none;
+    }
+
+    #welcome {
+        background: url("/images/welcome-bg.jpg") no-repeat;
+        background-size: 769px 515px;
+        background-position-y: -100px;
+        background-position-x: center;
+    }
+    #welcome-content{
+        background-color: rgba(255, 255, 255, 0.90);
+        text-align: center;
+        padding: 30px 20px 0px;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 0px) {
+    #play-keystone {
+        background: url("/images/play-keystone-sm.png") no-repeat;
+        width: 315px;
+        height: 90px;
+    }
+
+    h3#subtitle {
+        font-size: 22px;
+    }
+    #welcome-content{
+        padding-bottom: 50px;
+    }
 }

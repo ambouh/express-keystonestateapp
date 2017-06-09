@@ -21,8 +21,34 @@
                         templateUrl: '/views/home.html',
                         controller: 'HomeController as vm'
                     })
+                    .state('camps', {
+                        url: '/camps',
+                        templateUrl: "/views/camps.html",
+                        controller: 'CampsController as vm'
+                    })
+                    .state('about', {
+                        url: '/about',
+                        templateUrl: "/views/about.html",
+                        controller: 'AboutController as vm'
+                    })
+                    .state('contact', {
+                        url: '/contact',
+                        templateUrl: "/views/contact.html",
+                        controller: 'ContactController as vm'
+                    })
+                    .state('signup', {
+                        url: '/signup',
+                        templateUrl: "/views/sign-up.html",
+                        controller: 'SignupController as vm'
+                    })
             }
-        ]);
+        ])
+        .directive('pageView', function () {
+            return{
+                restrict: "AEC",
+                templateUrl:"/views/page-view.html"
+            }
+        });
 
         app.run(allOtherScripts);
 

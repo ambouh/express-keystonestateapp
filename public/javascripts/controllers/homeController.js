@@ -17,7 +17,7 @@
         mainInfo.then(function(response) {
             vm.home = response.data.home;
             vm.welcome = response.data.home.welcome;
-            vm.camps = response.data.home.camps;
+            vm.camps = response.data.camps;
             vm.display = response.data.home.display;
             vm.alumni = response.data.home.alumni;
             vm.blog = response.data.home.blog;

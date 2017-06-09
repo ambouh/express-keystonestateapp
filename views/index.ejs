@@ -35,6 +35,11 @@
   <!--controllers-->
   <script src="/javascripts/controllers/templateController.js"></script>
   <script src="/javascripts/controllers/homeController.js"></script>
+  <script src="/javascripts/controllers/campsController.js"></script>
+  <script src="/javascripts/controllers/aboutController.js"></script>
+  <script src="/javascripts/controllers/contactController.js"></script>
+  <script src="/javascripts/controllers/signupController.js"></script>
+  <script src="/javascripts/controllers/miscController.js"></script>
 
 </head>
 <body ng-app="KeystoneStateApp">
@@ -44,7 +49,7 @@
     <header id="nav" class="row"  ng-controller="TemplateController as vm">
       <nav class="navbar navbar-default navbar-static-top" id="top-navbar">
         <div class="navbar-header">
-          <a class="navbar-brand" ui-sref="{{vm.header.logo.link}}">
+          <a class="navbar-brand" ui-sref="home">
             <img ng-repeat="logo in vm.header.logo.picture" class="{{logo.classNames}}" alt="Brand" ng-src="{{logo.pictureUrl}}"/>
           </a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="menu">
@@ -59,7 +64,7 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li ng-repeat="a in vm.header.links">
-              <a href="{{a.href}}">{{a.link}}</a>
+              <a ui-sref="{{a.href}}">{{a.link}}</a>
             </li>
           </ul>
         </div>

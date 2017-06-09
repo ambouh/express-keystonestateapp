@@ -16,20 +16,24 @@
             "pictureUrl": "images/logo-sm.png"
           }
         ],
-        "link": "#"
+        "link": "#/home"
         },
       "links":[
         {
-          "href": "#",
+          "href": "home",
           "link": "Home"
         },
         {
-          "href": "#",
+          "href": "about",
           "link": "About"
         },
         {
-          "href": "#",
+          "href": "camps",
           "link": "Camps"
+        },
+        {
+          "href": "contact",
+          "link": "Contact"
         }
       ]
     },
@@ -37,19 +41,19 @@
       "footerLinks":[
         {
           "page": "home",
-          "url": "#"
+          "url": "home"
         },
         {
           "page": "sitemap",
-          "url": "#"
+          "url": "home"
         },
         {
           "page": "faq",
-          "url": "#"
+          "url": "home"
         },
         {
           "page": "privacy policy",
-          "url": "#"
+          "url": "home"
         }
       ],
       "footerContact":[
@@ -87,7 +91,19 @@
     }
   },
   "home":{
-    "jumbotron":{},
+    "jumbotron":{
+      "subtitle" : "The #1 Ranked Basketball Camp and Shootouts!",
+      "links" : [
+        {
+          "title" : "Sign up",
+          "link" : "signup"
+        },
+        {
+          "title" : "Learn More",
+          "link" : "about"
+        }
+      ]
+    },
     "welcome":{
       "url" : "images/welcome-bg.jpg",
       "content" :
@@ -101,5 +117,43 @@
     "display":{},
     "alumni": {},
     "blog": {}
+  },
+  "camps" : {
+    "title" : "- Camps View -",
+    "types" : [
+      {
+        "title": "All Camps",
+        "desc" : "Skills camps, talents camps, and team camps",
+        "link" : "camps"
+      },
+      {
+        "title": "Boys Shootouts",
+        "desc" : "Skills camps, talents camps, and team camps",
+        "link" : "camps"
+      },
+      {
+        "title": "Girls Shootouts",
+        "desc" : "Skills camps, talents camps, and team camps",
+        "link" : "camps"
+      }
+    ]
+  },
+  "contact" : {
+    "title" : "- Contact View -"
+  },
+  "about" : {
+    "title" : "- About View -"
+  },
+  "privacy": {
+    "title" : "- Privacy Policy View -"
+  },
+  "faq" : {
+    "title" : "- Frequently Asked Questions View -"
+  },
+  "sitemap" : {
+    "title" : "- Site Map View -"
+  },
+  "signUp" : {
+    "title" : "- Sign Up View -"
   }
 }

@@ -181,6 +181,7 @@ section#notable-alumni {
     display: flex;
     align-items: center;
     flex-direction: column;
+    -webkit-direction: column;
 }
 
 #notable-alumni .flex-container>h1 {
@@ -290,6 +291,11 @@ h3.blog-subtitle {
     padding: 0;
     margin: 0;
 }
+@media (max-width: 1200px) and (min-width: 0px){
+    #notable-alumni {
+        display: none;
+    }
+}
 
 @media (max-width: 991px) and (min-width: 0px){
 
@@ -325,6 +331,9 @@ h3.blog-subtitle {
         background-color: rgba(255, 255, 255, 0.90);
         text-align: center;
         padding: 30px 20px 0px;
+    }
+    #display{
+        display: none;
     }
 }
 

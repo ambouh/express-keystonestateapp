@@ -58,7 +58,7 @@
       ],
       "footerContact":[
         {
-          "url": "#",
+          "url": "tel:7315555555",
           "className": "fa fa-phone fa-lg footer-contact",
           "text": "+1(731)555.5555"
         },

@@ -295,10 +295,53 @@ h3.blog-subtitle {
     #notable-alumni {
         display: none;
     }
+
+    ul.all-camps {
+        padding-left: 50px;
+        list-style: none;
+        margin: 40px 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul.all-camps li {
+        margin: 7px;
+    }
+
 }
 
 @media (max-width: 991px) and (min-width: 0px){
+    ul.all-camps {
+        padding-left: 0;
+        justify-content: center;
+    }
 
+    li.blog-blurb {
+        margin-right: 0;
+    }
+
+    li.blog-blurb div {
+        width: 300px;
+        margin: 0px 15px;
+        padding: 50px 0px 30px;
+    }
+    ul li.blog-blurb:nth-child(even) {
+        margin-left: 10px;
+    }
+
+    li.blog-blurb h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        width: auto;
+        line-height: inherit;
+        margin: 40px 0 0;
+    }
+
+    h3.blog-subtitle {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 769px) and (min-width: 0px){
@@ -335,8 +378,49 @@ h3.blog-subtitle {
     #display{
         display: none;
     }
-}
 
+    /*camps*/
+    ul.all-camps {
+        margin: 10px;
+    }
+
+    #camps .flex-container>h1 {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 700px) and (min-width: 0px){
+
+    ul.all-blogs {
+        flex-direction: column;
+    }
+
+    ul li.blog-blurb:nth-child(even) {
+        margin-left: 0;
+    }
+
+    li.blog-blurb {
+        margin: 15px 0;
+    }
+
+    li.blog-blurb div {
+        min-width: 90%;
+        margin: 0px 40px;
+        padding: 120px 0px 30px;
+    }
+
+    li.blog-blurb h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 19px;
+        width: auto;
+        line-height: inherit;
+    }
+    h3.blog-subtitle {
+        padding: 0;
+        margin: 0;
+        font-size: 19px;
+    }
+
+}
 @media (max-width: 500px) and (min-width: 0px) {
     #play-keystone {
         background: url("/images/play-keystone-sm.png") no-repeat;
@@ -349,5 +433,12 @@ h3.blog-subtitle {
     }
     #welcome-content{
         padding-bottom: 50px;
+    }
+
+
+    /*blogs*/
+    ul.all-blogs {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

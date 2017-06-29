@@ -290,6 +290,19 @@ span#idtosignature::after{
   color: #7fff5e;
   margin: 50px auto 400px;
 }
+
+.page-heading {
+  text-align: left;
+}
+
+.page-heading>h2 {
+  margin: 0 auto;
+  padding: 15px 35px;
+  background-color: #9b9a9a;
+  color: #cfcece;
+  border-top: 10px solid #737373;
+}
+
 /*Medium devices (desktops, 992px and up)*/
 @media (max-width: 991px) and (min-width: 0px){
   section#jumbotron-section {

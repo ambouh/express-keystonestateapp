@@ -48,7 +48,14 @@
                 restrict: "AEC",
                 templateUrl:"/views/page-view.html"
             }
+        })
+        .directive('costPerPlayer', function () {
+            return{
+                restrict: "AEC",
+                templateUrl:"/views/cost-per-player.html"
+            }
         });
+
 
         app.run(allOtherScripts);
 

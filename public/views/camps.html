@@ -1,1 +1,26 @@
-<page-view></page-view>
+<div class="row template-starter">
+    <section id="jumbotron-section" class="for-page"></section>
+    <div class="page-heading">
+        <h2>{{vm.title}}</h2>
+
+        <section class="camps-wrapper">
+            <p>{{vm.fullDesc}}</p>
+            <!--table-->
+            <table>
+                <tbody>
+                <tr>
+                    <th ng-repeat="header in vm.th">{{header}}</th>
+                </tr>
+                <tr  ng-repeat="data in vm.td">
+                    <td> {{data.venue}} <br> {{data.location}}</td>
+                    <td> {{data.date}}</td>
+                    <td> {{data.grades}}</td>
+                    <td> {{data.price}}</td>
+                    <td> <button>go!</button></td>
+                </tr>
+                </tbody>
+            </table>
+            <section cost-per-player=""></section>
+        </section>
+    </div>
+</div>

@@ -119,12 +119,38 @@
     "blog": {}
   },
   "camps" : {
-    "title" : "- Camps View -",
+    "title" : "Camps",
+    "th" : ["camps", "date", "grades", "cost", "sign-up?"],
+    "td" : [
+      {
+        "venue" : "Your University -",
+      "location" : "City, ST",
+      "date" : "January 01-30",
+      "grades" : "Grade 9-12",
+      "price" : "$200"
+      },
+      {
+        "venue" : "Your University -",
+        "location" : "City, ST",
+        "date" : "January 01-30",
+        "grades" : "Grade 9-12",
+        "price" : "$200"
+      },
+      {
+        "venue" : "Your University -",
+        "location" : "City, ST",
+        "date" : "January 01-30",
+        "grades" : "Grade 9-12",
+        "price" : "$200"
+      }
+    ],
     "types" : [
       {
         "title": "All Camps",
         "desc" : "Skills camps, talents camps, and team camps",
-        "link" : "camps"
+        "link" : "camps",
+        "fullDesc": "All camps featured es consectetur enim tincidunt. Etiam maximus condimentum egestas. Nullam posuere faucibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam posuere faucibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Etiam maximus condimentum egestas."
+
       },
       {
         "title": "Boys Shootouts",

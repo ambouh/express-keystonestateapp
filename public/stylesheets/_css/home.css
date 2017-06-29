@@ -403,7 +403,7 @@ h3.blog-subtitle {
     }
 
     li.blog-blurb div {
-        min-width: 90%;
+        min-width: auto;
         margin: 0px 40px;
         padding: 120px 0px 30px;
     }
@@ -440,5 +440,9 @@ h3.blog-subtitle {
     ul.all-blogs {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    ul#footer-contact-1 {
+        flex-direction: column-reverse;
     }
 }

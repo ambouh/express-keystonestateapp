@@ -389,3 +389,11 @@ span#idtosignature::after{
   }
 
 }
+
+@media (max-width: 500px) and (min-width: 0px) {
+  #development {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

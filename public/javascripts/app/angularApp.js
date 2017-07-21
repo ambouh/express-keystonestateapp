@@ -26,6 +26,11 @@
                         templateUrl: "/views/camps.html",
                         controller: 'CampsController as vm'
                     })
+                    .state('register', {
+                        url: '/register/',
+                        templateUrl: "/views/register.html",
+                        controller: 'CampsController as vm'
+                    })
                     .state('about', {
                         url: '/about',
                         templateUrl: "/views/about.html",
@@ -54,6 +59,9 @@
                 restrict: "AEC",
                 templateUrl:"/views/cost-per-player.html"
             }
+        })
+        .factory('serveData', function(){
+
         });
 
 

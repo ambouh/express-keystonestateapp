@@ -1,3 +1,8 @@
+<style>
+    td {
+        padding: 0px 15px;
+    }
+</style>
 <div class="row template-starter">
     <section id="jumbotron-section" class="for-page"></section>
     <div class="page-heading">
@@ -11,12 +16,13 @@
                 <tr>
                     <th ng-repeat="header in vm.th">{{header}}</th>
                 </tr>
-                <tr  ng-repeat="data in vm.td">
+                <tr  ng-repeat="data in vm.campList">
                     <td> {{data.venue}} <br> {{data.location}}</td>
                     <td> {{data.date}}</td>
                     <td> {{data.grades}}</td>
                     <td> {{data.price}}</td>
-                    <td> <button>go!</button></td>
+                    <td> <a ui-sref="register">[+] Add a person</a></td>
+                    <td> <a ui-sref="register">List of persons</a></td>
                 </tr>
                 </tbody>
             </table>

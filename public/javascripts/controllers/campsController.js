@@ -27,7 +27,14 @@
             vm.title = c.title;
             vm.fullDesc = allCamps.fullDesc;
             vm.th = c.th;
-            vm.td = c.td;
+            vm.campList = c.td;
+
+            vm.register = function () {
+                console.log('I hope I make this work.');
+
+            }
         });
+
+
     }
 }());

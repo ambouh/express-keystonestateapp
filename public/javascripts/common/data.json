@@ -120,16 +120,10 @@
   },
   "camps" : {
     "title" : "Camps",
-    "th" : ["camps", "date", "grades", "cost", "sign-up?"],
+    "th" : ["camps", "date", "grades", "cost", "sign-up?", "persons list"],
     "td" : [
       {
-        "venue" : "Your University -",
-      "location" : "City, ST",
-      "date" : "January 01-30",
-      "grades" : "Grade 9-12",
-      "price" : "$200"
-      },
-      {
+        "id" : "1",
         "venue" : "Your University -",
         "location" : "City, ST",
         "date" : "January 01-30",
@@ -137,6 +131,15 @@
         "price" : "$200"
       },
       {
+        "id" : "2",
+        "venue" : "Your University -",
+        "location" : "City, ST",
+        "date" : "January 01-30",
+        "grades" : "Grade 9-12",
+        "price" : "$200"
+      },
+      {
+        "id" : "3",
         "venue" : "Your University -",
         "location" : "City, ST",
         "date" : "January 01-30",

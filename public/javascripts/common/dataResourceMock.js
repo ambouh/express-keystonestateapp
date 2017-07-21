@@ -7,7 +7,7 @@
             "ngMockE2E"
         ]);
 
-    app.run(function($httpBackend){
-        var data = [];
+    app.run(function($httpBackend, mainInfo){
+        var data = $http.get('/javascripts/common/data.json');
     })
 }());

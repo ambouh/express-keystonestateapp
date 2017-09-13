@@ -1,0 +1,59 @@
+.camp-listOfPersons-list, .listOfPersons-row {
+    list-style: none;
+}
+
+.camp-listOfPersons-box ul {
+    display: flex;
+    background: #333;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.camp-listOfpersons-box {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.camp-listOfpersons-box ul {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    background: #f5f5f5;
+}
+
+.camp-listOfpersons-box ul li {
+    padding: 15px 25px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.camp-listOfpersons-box ul li.name {
+    text-align: left;
+}
+
+ul.camp-listOfPersons-list.header {
+    background: #c34042;
+    color: #fed4bf;
+}
+
+.camp-listOfPersons-list.body ul:nth-child(odd) {
+    background: #e7e7e7;
+}
+
+button.back-btn {
+    margin-bottom: 100px;
+    margin-top: 20px;
+    width: 55px;
+    height: 79px;
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    background: #4dab4d;
+    color: #Fff;
+    font-weight: bold;
+}
+
+.back-btn {
+    margin: 40px;
+}

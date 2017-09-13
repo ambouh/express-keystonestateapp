@@ -303,6 +303,34 @@ span#idtosignature::after{
   border-top: 10px solid #737373;
 }
 
+.page-title h1 {
+  font-size: 48px;
+  color: #282828;
+  font-weight: 600;
+  margin: 40px auto 0px;
+}
+
+.page-title h3 {
+  font-size: 30px;
+  color: #282828;
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.page-title p {
+  width: 700px;
+  text-align: center;
+  margin: 5px auto 0px;
+}
+
+.contact, .camps, .camp, .about, .sign-up, .register {
+  text-align: left;
+}
+
 /*Medium devices (desktops, 992px and up)*/
 @media (max-width: 991px) and (min-width: 0px){
   section#jumbotron-section {

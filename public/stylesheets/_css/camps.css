@@ -1,5 +1,183 @@
-
-
 .camps-wrapper {
     padding: 30px 35px 35px;
+}
+
+
+.camp-addPersons-box input, .camp-addPersons-box select {
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.camp-addPersons-box {
+    max-width: 700px;
+    margin-bottom: 200px;
+    text-align: left;
+}
+
+section.camp-addPersons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camp-addPersons-box div {
+    margin: 20px auto;
+}
+
+.camp-addPersons-box label {
+    width: 180px;
+    text-align: right;
+    font-weight: normal;
+    padding-right: 20px;
+}
+.camp-addPersons-box div.submit-btn {
+     text-align: center;
+     margin-top: 60px;
+ }
+
+.submit-btn a {
+    margin-top: 30px;
+}
+
+.submit-btn a {
+    display: block;
+    font-family: Agency FB, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #379d3c;
+    cursor: pointer;
+
+}
+
+.submit-btn a:hover {
+    text-decoration: none;
+}
+
+.camp-box {
+    background: #077675; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#61b7fa, #077675); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#61b7fa, #077675); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#61b7fa, #077675);  /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#61b7fa, #077675); /* Standard syntax */
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.camp-box h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+ul.event-row li {
+}
+
+ul.event-row {
+    padding-left: 0;
+    list-style: none;
+    border-top: 1px solid #89c8fe;
+    padding: 25px 0px;
+    margin: 0px 50px;
+    text-align: left;
+}
+
+ul.event-row li {
+    margin-left: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+ul.event-row li:nth-child(1) {
+    border: 1px solid #6dcff6;
+    padding: 20px;
+    width: 95px;
+    border-radius: 55px;
+    background: #6dcff6;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+ul.event-row li:nth-child(2) {
+    margin: 0px 70px 0px 50px;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: 100;
+}
+
+.deadlines {
+    font-size: 12px;
+    padding: 5px;
+    background: yellow;
+    width: 165px;
+    text-align: center;
+    border-radius: 3px;
+    color: #333;
+    margin: 5px 0px;
+}
+
+.pin {
+    height: 55px;
+    width: 40px;
+    background: url(../images/pinpoint.png) no-repeat;
+    display: inline-block;
+}
+
+span.location {
+    display: inline-block;
+    position: relative;
+    top: -25px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+ul.event-row li:last-child {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -34px;
+    margin-left: 160px;
+}
+
+ul.event-row>li:last-child>a:nth-child(1) {
+    display: block;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #6dcff6;
+    cursor: pointer;
+}
+
+ul.event-row>li:last-child>a:nth-child(2) {
+    font-size: 14px;
+    padding-top: 7px;
+    text-decoration: underline;
+    color: #fff;
+}
+
+ul.event-row>li:last-child>a:nth-child(1):hover {
+    text-decoration: none;
+}
+
+div a.cancel-btn {
+    display: block;
+    font-family: Agency FB, sans-serif;
+    font-weight: bold;
+    margin: 14px auto 0;
+    padding-bottom: 6px;
+    font-size: 20px;
+    color: red;
+    border-top: 1px solid #fff;
+    width: 73px;
+    border-bottom: 2px solid red;
+}
+div a.cancel-btn:hover {
+    text-decoration: none;
 }

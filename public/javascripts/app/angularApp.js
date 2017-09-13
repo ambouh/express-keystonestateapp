@@ -7,7 +7,8 @@
         .module('KeystoneStateApp',
         [
             "common.services",
-            "ui.router"
+            "ui.router",
+            "dataResourceMock"
         ])
         .config([
             "$stateProvider",
@@ -24,12 +25,36 @@
                     .state('camps', {
                         url: '/camps',
                         templateUrl: "/views/camps.html",
+                        resolve: {
+                            dataResource: "dataResource",
+                            allCamps: function (dataResource) {
+                                return dataResource.query().$promise;
+                            }
+
+                        },
                         controller: 'CampsController as vm'
                     })
-                    .state('register', {
-                        url: '/register/',
-                        templateUrl: "/views/register.html",
-                        controller: 'CampsController as vm'
+                    .state('camp', {
+                        abstract: true,
+                        url: "/camp/:campId",
+                        templateUrl: "/views/camp.html",
+                        controller: 'CampController as vm',
+                        resolve: {
+                            dataResource: 'dataResource',
+                            camp: function (dataResource, $stateParams) {
+                                var campId = $stateParams.campId;
+                                return dataResource.get({campId: campId}).$promise;
+                            }
+
+                        }
+                    })
+                    .state('camp.addPerson', {
+                        url: '/addPerson',
+                        templateUrl: "/views/camp.addPerson.html"
+                    })
+                    .state('camp.listOfPersons', {
+                        url: '/listOfPersons',
+                        templateUrl: "/views/camp.listOfPersons.html"
                     })
                     .state('about', {
                         url: '/about',

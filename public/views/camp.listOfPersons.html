@@ -1,0 +1,32 @@
+<section class="page-title">
+    <h1>Selected: {{vm.camp.venue}}</h1>
+    <h3>Reserve today! (35) spots left</h3>
+</section>
+<section class="camp-listOfPersons-wrapper">
+    <div class="camp-listOfpersons-box">
+        <ul class="camp-listOfPersons-list header">
+            <li class="name">Name</li>
+            <li class="position">Position</li>
+            <li class="edit">Edit Reservation</li>
+        </ul>
+        <div class="camp-listOfPersons-list body">
+            <ul class="listOfPersons-row" ng-repeat="person in vm.camp.persons">
+                <li class="name">{{person}}</li>
+                <li>CENTER</li>
+                <li>
+                    <a ng-click="vm.deletePerson(person)">
+                        <img src="../images/cancel.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="back-btn">
+        <a class="cancel-btn"
+                ui-sref="camps">
+            &#8592; Back
+        </a>
+    </div>
+</section>
+

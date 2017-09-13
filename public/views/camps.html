@@ -5,28 +5,46 @@
 </style>
 <div class="row template-starter">
     <section id="jumbotron-section" class="for-page"></section>
-    <div class="page-heading">
-        <h2>{{vm.title}}</h2>
+    <section class="page-title">
+        <h1>{{vm.title}}</h1>
+        <h3>Select a camp & reserve spots!</h3>
+        <p>Nullam posuere faucibus sagittis is et consectetur enim tincidunt. Etiam maximus condimentum egestas.
+            Nullam posuere faucibus sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+    </section>
+    <section class="camp-wrapper">
 
-        <section class="camps-wrapper">
-            <p>{{vm.fullDesc}}</p>
-            <!--table-->
-            <table>
-                <tbody>
-                <tr>
-                    <th ng-repeat="header in vm.th">{{header}}</th>
-                </tr>
-                <tr  ng-repeat="data in vm.campList">
-                    <td> {{data.venue}} <br> {{data.location}}</td>
-                    <td> {{data.date}}</td>
-                    <td> {{data.grades}}</td>
-                    <td> {{data.price}}</td>
-                    <td> <a ui-sref="register">[+] Add a person</a></td>
-                    <td> <a ui-sref="register">List of persons</a></td>
-                </tr>
-                </tbody>
-            </table>
-            <section cost-per-player=""></section>
-        </section>
-    </div>
+        <div class="camp-box">
+            <h4>Upcoming Events</h4>
+            <ul class="event-row" ng-repeat="camp in vm.allCamps">
+                <li>{{camp.date}}</li>
+                <li>{{camp.venue}}
+                    <div class="price">
+                        <span >
+                            Overnight: $420
+                        </span> |
+                        <span >
+                            Commuter: $360
+                        </span>
+                    </div>
+                    <div class="deadlines">
+                        <span >
+                            Deadline: May 22
+                        </span> |
+                        <span >
+                            After: <span class="extra"> +$20</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="pin"></div>
+                    <span class="location">{{camp.location}}</span>
+                </li>
+                <li>
+                    <a ui-sref="camp.addPerson({campId: camp.id})">REGISTER</a>
+                    <a ui-sref="camp.listOfPersons({campId: camp.id})">All Reserved Spots</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </div>

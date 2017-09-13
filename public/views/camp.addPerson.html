@@ -1,0 +1,60 @@
+<section class="page-title">
+    <h1>Selected: {{vm.camp.venue}}</h1>
+    <h3>Fill out the form below to <br> reserve a spot!</h3>
+</section>
+<section class="camp-addPersons-wrapper">
+    <div class="camp-addPersons-box">
+        <form>
+            <div>
+                <label for="firstName">First Name </label>
+                <input ng-model="vm.person.firstName" type="text" id="firstName">
+
+            </div>
+            <div>
+                <label for="lastName">Last Name </label>
+                <input ng-model="vm.person.lastName" type="text" id="lastName">
+
+            </div>
+            <div>
+                <label for="email">Email Address </label>
+                <input ng-model="vm.person.email" type="text"  id="email">
+
+            </div>
+            <div>
+                <label for="emergency">Emergency Contact </label>
+                <input type="text"  id="emergency">
+            </div>
+            <div>
+                <label for="sizes">Tee Shirt Size </label>
+                <select name="sizes" id="sizes" placeholder="Select a size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xlarge">Extra Large</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="positions">Position You Play Best </label>
+                <select name="positions" id="positions" placeholder="Pick a position">
+                    <option value="center">Center</option>
+                    <option value="point">Point Guard</option>
+                    <option value="power">Power Forward</option>
+                    <option value="shooting">Shooting Guard</option>
+                    <option value="smallf">Small Forward</option>
+                </select>
+
+            </div>
+            <div class="submit-btn" style="background: url(../images/angle-btn.png) no-repeat; background-position-x: 235px;">
+                <a ng-click="vm.addPerson(vm.person.firstName, vm.person.lastName)">
+                    Submit
+                </a>
+                <a ui-sref="camps" class="cancel-btn">cancel</a>
+            </div>
+        </form>
+    </div>
+
+    <div>
+    </div>
+</section>
+

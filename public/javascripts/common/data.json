@@ -125,24 +125,24 @@
       {
         "id" : "1",
         "venue" : "Your University -",
-        "location" : "City, ST",
-        "date" : "January 01-30",
+        "location" : "514 University Ave, Selinsgrove, PA 17870",
+        "date" : "June 01-08",
         "grades" : "Grade 9-12",
         "price" : "$200"
       },
       {
         "id" : "2",
         "venue" : "Your University -",
-        "location" : "City, ST",
-        "date" : "January 01-30",
+        "location" : "7950 Baltimore Ave, College Park, MD 20742",
+        "date" : "June 01-08",
         "grades" : "Grade 9-12",
         "price" : "$200"
       },
       {
         "id" : "3",
         "venue" : "Your University -",
-        "location" : "City, ST",
-        "date" : "January 01-30",
+        "location" : "1 Old Main, State College, PA 16801",
+        "date" : "June 01-08",
         "grades" : "Grade 9-12",
         "price" : "$200"
       }

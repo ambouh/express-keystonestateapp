@@ -1,0 +1,73 @@
+.contact-image {
+    background: url(../../images/contact-display.jpg) no-repeat;
+    background-size: cover;
+    width: 495px;
+    height: 220px;
+    margin-left: 25px;
+}
+
+.contact-wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 140px;
+}
+
+.contact-phone-email ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+}
+
+.contact-map {
+    background: #ebe8de;
+    margin-top: 90px;
+    height: 300px;
+    width: 100%;
+}
+
+.contact-address h3 {
+    font-size: 36px;
+    color: #282828;
+    margin: 0;
+}
+
+.contact-address address {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.contact-address {
+    border-left: 5px solid #282828;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-phone-email ul li a {
+    color: #999999;
+    font-weight: bold;
+}
+
+.contact-phone-email ul li a span {
+    color: #282828;
+}
+
+.contact-phone-email ul li a:hover, .contact-phone-email ul li a:focus {
+    text-decoration: none;
+    color: #282828;
+}
+
+.contact-phone-email {
+    padding: 10px;
+    background: url(http://www.lonsdale.fr/wp-content/themes/lonsdale2017/img/common/lignes-pattern.jpg);
+}

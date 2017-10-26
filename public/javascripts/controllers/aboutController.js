@@ -19,6 +19,7 @@
 
         mainInfo.then(function (response) {
             vm.title = response.data.about.title;
+            vm.coaches = response.data.about.coaches;
         });
     }
 }());

@@ -171,7 +171,21 @@
     "title" : "- Contact View -"
   },
   "about" : {
-    "title" : "- About View -"
+    "title" : "- About View -",
+    "coaches" : [
+      {"name" : "Pete White",
+        "desc" : "Coach Pete White has 20 years of experience as a coach. Keystone State Camps are directed by Pete White, one of the most knowledgeable and respected coaches in Pennsylvania.",
+        "image" : "coach1"
+      },
+      {"name" : "Pete White",
+        "desc" : "Coach Pete White has 20 years of experience as a coach. Keystone State Camps are directed by Pete White, one of the most knowledgeable and respected coaches in Pennsylvania.",
+        "image" : "coach1"
+      },
+      {"name" : "Pete White",
+        "desc" : "Coach Pete White has 20 years of experience as a coach. Keystone State Camps are directed by Pete White, one of the most knowledgeable and respected coaches in Pennsylvania.",
+        "image" : "coach1"
+      }
+      ]
   },
   "privacy": {
     "title" : "- Privacy Policy View -"

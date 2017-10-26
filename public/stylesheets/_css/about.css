@@ -1,0 +1,150 @@
+.about-desc p {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 60px; /* Firefox */
+    column-gap: 60px;
+
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+
+    -webkit-column-rule-width: 5px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 5px; /* Firefox */
+    column-rule-width: 5px;
+
+    -webkit-column-rule-color: #282828; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #282828; /* Firefox */
+    column-rule-color: #282828;
+
+    padding: 50px 50px 0px;
+    /*height: 200px;*/
+
+    text-indent: 50px;
+    margin-bottom: 80px;
+}
+
+.coaches {
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+
+    background: -webkit-linear-gradient(90deg, #6fdcd0, #b3eca8, #6fdcd0 );; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #6fdcd0, #b3eca8, #6fdcd0 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #6fdcd0, #b3eca8, #6fdcd0 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #6fdcd0, #b3eca8, #6fdcd0 ); /* Standard syntax (must be last) */
+
+    -webkit-display: flex;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction:column;
+    flex-direction:column;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.coaches h1 {
+    font-size: 48px;
+    color: #1b7369;
+    font-weight: bold;
+    padding-top: 30px;
+    margin: 0px auto 30px;
+    text-align: center;
+}
+
+.coaches-profiles {
+    width: 90%;
+
+     display: -webkit-flex;
+     display: flex;
+
+     -webkit-justify-content: space-between;
+     justify-content: space-between;
+
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    flex-flow: row wrap;
+ }
+
+.coach {
+    border-radius: 10px;
+    min-width: 255px;
+    min-height: 275px;
+    margin: 0 25px 20px 25px;
+}
+
+.coach-desc {
+    min-width: 255px;
+    margin-top: 38px;
+    color: #2a89bc;
+    text-align: center;
+    padding: 11px 0px;
+}
+
+.coach-desc p, .coach-desc p.desc {
+    max-width: 255px;
+    background: rgba(198,216,225,0.9);
+    margin-bottom: 0px;
+    padding: 6px 15px;
+}
+
+.coach-desc p {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.coach a .coach-desc p.desc {
+    background: rgba(198,216,225,0.9);
+    opacity: 0;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #545454;
+    text-align: left;
+    transition: opacity 400ms;
+    transition-timing-function: ease-in-out;
+}
+
+.coach a:hover .coach-desc p.desc {
+    opacity: 1;
+    transition: opacity 200ms;
+
+    transition-timing-function: ease-in-out;
+}
+
+.coach a:hover {
+    color: transparent;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) and (min-width: 0px) {
+    .about-desc p {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (max-width: 694px) and (min-width: 0px) {
+    .coaches-profiles {
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        -webkit-align-items: center;
+        align-items: center;
+
+        -webkit-flex-flow: row wrap;
+        -moz-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+}

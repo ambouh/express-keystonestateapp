@@ -69,3 +69,25 @@
     padding: 10px;
     background: url(http://www.lonsdale.fr/wp-content/themes/lonsdale2017/img/common/lignes-pattern.jpg);
 }
+
+@media (max-width: 730px) and (min-width: 0px) {
+    .contact-wrapper {
+        margin-top: 60px;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-image {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -238,3 +238,19 @@ div a.cancel-btn:hover {
         padding-top: 15px;
     }
 }
+
+@media (max-width: 421px) and (min-width: 0px) {
+    .camp-addPersons-box div {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .camp-addPersons-box label {
+        width: 180px;
+        text-align: center;
+        font-weight: normal;
+        padding-right: 0px;
+    }
+
+
+}

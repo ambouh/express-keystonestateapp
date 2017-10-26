@@ -92,17 +92,6 @@
     .contact-wrapper {
         margin-top: 60px;
         display: block;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-direction: row;
-        flex-direction: row;
-
-        -webkit-align-items: center;
-        align-items: center;
-
-        -webkit-justify-content: center;
-        justify-content: center;
     }
 
     .contact-image {
@@ -113,16 +102,6 @@
     .contact-info {
         margin: 20px 5px;
 
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-direction: column;
-        flex-direction: column;
-
-        -webkit-align-items: center;
-        align-items: center;
-
-        -webkit-justify-content: center;
-        justify-content: center;
+        display: block;
     }
 }

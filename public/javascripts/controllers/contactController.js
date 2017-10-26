@@ -16,6 +16,7 @@
 
         mainInfo.then(function (response) {
             vm.title = response.data.contact.title;
+            vm.google_map = response.data.contact.google_map;
         });
     }
 }());

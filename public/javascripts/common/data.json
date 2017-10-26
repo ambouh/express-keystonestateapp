@@ -168,7 +168,8 @@
     ]
   },
   "contact" : {
-    "title" : "- Contact View -"
+    "title" : "- Contact View -",
+    "google_map": "AIzaSyC-baPjf7nFKYUs7KAo5F3sz2arvFULx8E"
   },
   "about" : {
     "title" : "- About View -",

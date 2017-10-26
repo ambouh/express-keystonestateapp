@@ -83,6 +83,15 @@ ul.event-row {
     padding: 25px 0px;
     margin: 0px 50px;
     text-align: left;
+
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 ul.event-row li {
@@ -103,7 +112,6 @@ ul.event-row li:nth-child(1) {
 }
 
 ul.event-row li:nth-child(2) {
-    margin: 0px 70px 0px 50px;
     font-weight: bold;
 }
 
@@ -142,8 +150,6 @@ ul.event-row li:last-child {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: -34px;
-    margin-left: 160px;
 }
 
 ul.event-row>li:last-child>a:nth-child(1) {
@@ -180,4 +186,55 @@ div a.cancel-btn {
 }
 div a.cancel-btn:hover {
     text-decoration: none;
+}
+@media (max-width:992px) and (min-width: 642px)  {
+    ul.event-row {
+        width: 75%;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+
+    ul.event-row li:nth-child(3) {
+        width: 100%;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+
+}
+@media (max-width:642px) and (min-width: 0px)  {
+    ul.event-row {
+        width: 60%;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+
+    ul.event-row li {
+        text-align: center;
+    }
+    ul.event-row li:nth-child(1) {
+        border: 1px solid #6dcff6;
+        padding: 8px;
+        width: auto;
+        border-radius: 5px;
+        background: #6dcff6;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .deadlines {
+        font-size: 12px;
+        padding: 5px;
+        background: yellow;
+        width: 165px;
+        text-align: center;
+        border-radius: 3px;
+        color: #333;
+        margin: 5px auto;
+    }
+
+    ul.event-row li:nth-child(3) {
+        width: 100%;
+        padding-top: 15px;
+    }
 }

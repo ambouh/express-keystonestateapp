@@ -34,10 +34,10 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 body {
-  font-size: 18px;
+  font-size: 19px;
   background: url(../images/texture_grain_200x200_v2.png) repeat top left;
   font-family: calibri, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #999;
+  color: #545454;
 }
 
 div#wrapper {
@@ -322,9 +322,9 @@ span#idtosignature::after{
 }
 
 .page-title p {
-  width: 700px;
+  width: auto;
   text-align: center;
-  margin: 5px auto 0px;
+  margin: 5px 30px 0px;
 }
 
 .contact, .camps, .camp, .about, .sign-up, .register {

@@ -44,7 +44,6 @@
 
 .contact-address address {
     margin-bottom: 0;
-    font-weight: bold;
 }
 
 .contact-address {
@@ -54,8 +53,7 @@
 }
 
 .contact-phone-email ul li a {
-    color: #999999;
-    font-weight: bold;
+    color: #545454;
 }
 
 .contact-phone-email ul li a span {

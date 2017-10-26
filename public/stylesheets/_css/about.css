@@ -22,7 +22,6 @@
     padding: 50px 50px 0px;
     /*height: 200px;*/
 
-    text-indent: 50px;
     margin-bottom: 80px;
 }
 
@@ -82,7 +81,7 @@
 
 .coach-desc {
     min-width: 255px;
-    margin-top: 38px;
+    margin-top: -4px;
     color: #2a89bc;
     text-align: center;
     padding: 11px 0px;

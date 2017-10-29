@@ -165,7 +165,45 @@
         "desc" : "Skills camps, talents camps, and team camps",
         "link" : "camps"
       }
+    ],
+    "facilities" : [
+      {"name" : "Susquehanna University",
+        "desc" : ["6 indoor full-length courts","2-to-a-room in air-conditioned residence halls", "4 courts are air-conditioned"],
+        "image" : "susq1"
+      },
+      {
+        "name": "Susquehanna University",
+        "desc": [
+          "6 indoor full-length courts",
+          "2-to-a-room in air-conditioned residence halls",
+          "4 courts are air-conditioned"
+        ],
+        "image": "susq1"
+      },
+      {
+        "name": "Susquehanna University",
+        "desc": [
+          "6 indoor full-length courts",
+          "2-to-a-room in air-conditioned residence halls",
+          "4 courts are air-conditioned"
+        ],
+        "image": "susq1"
+      }
+    ],
+    "necessities": [
+      "- Basketball shoes",
+      "- Socks, shorts, & shirts",
+      "- Swimsuit, sweatshirt, rain jacket",
+      "- Modest amount of spending money and $35 cash deposit",
+      "- Single bed sheets",
+      "- pillow and pillow case",
+      "- lightweight blanket",
+      "- Alarm clock",
+      "- Toiletries (toothbrush, toothpaste, soap, shampoo, etc)",
+      "- 2 towels",
+      "- Gym bag or backpack"
     ]
+
   },
   "contact" : {
     "title" : "- Contact View -",

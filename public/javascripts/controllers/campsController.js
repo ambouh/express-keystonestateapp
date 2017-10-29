@@ -8,17 +8,22 @@
         .controller('CampsController',
             [
                 "allCamps",
+                "mainInfo",
                 CampsController
             ])
         .controller('CampController', ["camp", "$state", CampController]);
 
-    function CampsController(allCamps) {
+    function CampsController(allCamps, mainInfo) {
         var vm = this;
 
         vm.title="All Camps";
         vm.allCamps = allCamps;
         vm.th = ["camps", "date", "grades", "cost", "sign-up?", "persons list"];
-        //console.log(vm.allCamps);
+
+        mainInfo.then(function (response) {
+            vm.facilities = response.data.camps.facilities;
+            vm.necessities = response.data.camps.necessities;
+        });
     }
 
     function CampController(camp, $state) {

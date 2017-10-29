@@ -182,6 +182,42 @@ ul.event-row>li:last-child>a:nth-child(1):hover {
     text-decoration: none;
 }
 
+.necessities h1 {
+    font-size: 48px;
+    color: #bb5d35;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+.necessities p {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+
+    -webkit-column-rule-width: 5px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 5px; /* Firefox */
+    column-rule-width: 5px;
+
+    -webkit-column-rule-color: #92565c; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #92565c; /* Firefox */
+    column-rule-color: #92565c;
+}
+
+.necessities p span {
+    display: block;
+}
+
+.necessities {
+    background: url("/images/necessitiesbg.png") no-repeat;
+    background-size: cover;
+    padding: 5px 20px 20px;
+    margin-bottom: 50px;
+}
+
 div a.cancel-btn {
     display: block;
     font-family: Agency FB, sans-serif;
@@ -197,6 +233,8 @@ div a.cancel-btn {
 div a.cancel-btn:hover {
     text-decoration: none;
 }
+
+
 @media (max-width:992px) and (min-width: 642px)  {
     ul.event-row {
         width: 75%;
@@ -250,6 +288,12 @@ div a.cancel-btn:hover {
     ul.event-row li:nth-child(3) {
         width: 100%;
         padding-top: 15px;
+    }
+
+    .necessities p {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
     }
 }
 

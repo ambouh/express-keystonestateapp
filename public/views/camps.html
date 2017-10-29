@@ -47,5 +47,28 @@
             </ul>
 
         </div>
+        <div class="facilities">
+            <div class="coaches">
+                <h1>Facilities</h1>
+                <h3>“Keystone State Camp Have the Best Facilities”</h3>
+                <p class="fal-p">All facilities feature an “all-you-can-eat” air conditioned dining hall and an Olympic-sized swimming pool.</p>
+                <div class="coaches-profiles">
+                    <div class="coach" ng-repeat="fal in vm.facilities" style="background:url(../images/{{fal.image}}.png) no-repeat top center">
+                        <a>
+                            <div class="coach-desc facilities-desc" style="">
+                                <p class="desc" ng-repeat="d in fal.desc">- {{d}}</p>
+                                <p>{{fal.name}}</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="necessities">
+            <h1>Necessities</h1>
+            <p>
+                <span ng-repeat="n in vm.necessities">{{n}}</span>
+            </p>
+        </div>
     </section>
 </div>
